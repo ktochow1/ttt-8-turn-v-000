@@ -27,6 +27,9 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
+  else
+    puts "This is an invalid move. Try again."
+    turn(board)
 end
 
 def position_taken?(board, index)
