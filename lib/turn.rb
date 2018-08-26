@@ -30,6 +30,7 @@ def turn(board)
   else
     puts "This is an invalid move. Try again."
     turn(board)
+  end
 end
 
 def position_taken?(board, index)
